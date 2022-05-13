@@ -14,29 +14,96 @@
         a {
           color: #FFF;
           text-shadow: 0 0.1px 8px #1c1c1c;
-          margin-left: 32.5rem;
-          position: absolute;
+          margin-left: 1rem;
           transition: color 1s;
+          font-family: "Roboto", sans-serif;
+          font-size: 32px;
+          color: #fff;
+          letter-spacing: 2px;
+          font-weight: bold;
+          text-decoration: none;
+          margin-top: 5px;
         }
         a:hover {
           text-shadow: 0 0.1px 8px #1c1c1c;
-          margin-left: 32.5rem;
-          position: absolute;
         }
         h1 {
+          font-family: "Roboto", sans-serif;
+          font-size: 32px;
+          color: #fff;
+          letter-spacing: 2px;
+          font-weight: bold;
+          text-decoration: none;
           display: flex;
           padding: 50px;
-          margin: 20px;
           border-radius: 0%;
           background-color: #67036e;
           transition: border-radius 0.6s;
         }
         h1:hover {
-          display: flex;
-          padding: 50px;
-          box-shadow: 0 10px 10px #e13eed;
-          margin: 20px;
-          border-radius: 50%;
-          background-color: #b440b8;
-          
+        animation: flicker 400ms linear forwards;
+        border-radius: 50%;
+        }
+        button.neon-button {
+          text-shadow: 0px 1px 8px #1c1c1c;
+          border: 3px solid #67036e;
+          background: #67036e;
+          padding: 16px 32px;
+          border-radius: 10px;
+          font-family: "Roboto", sans-serif;
+          font-size: 32px;
+          text-transform: uppercase;
+          color: #fff;
+          letter-spacing: 4px;
+          font-weight: bold;
+          margin-left: 460px;
+          cursor: pointer;
+        }
+        
+        button.neon-button:hover {
+          animation: flicker 400ms linear forwards;
+        }
+        
+        @keyframes flicker {
+          5% {
+            border-color: #fa032c;
+            color: #fff;
+            text-shadow: 0 0 4px #ff4262;
+            box-shadow: 0 0 16px 0 #ff4262, inset 0 0 8px 0 #ff4262;
+          }
+        
+          10% {
+            border-color: #ff4262;
+            color: #fff;
+            box-shadow: unset;
+            text-shadow: unset;
+          }
+        
+          55% {
+            border-color: #fa032c;
+            color: #fff;
+            text-shadow: 0 0 4px #ff4262;
+            box-shadow: 0 0 16px 0 #ff4262, inset 0 0 8px 0 #ff4262;
+          }
+        
+          75% {
+            border-color: #fa032c;
+            color: #fff;
+            text-shadow: 0 0 4px #ff4262;
+            box-shadow: 0 0 16px 0 #ff4262, inset 0 0 8px 0 #ff4262;
+          }
+        
+          80% {
+            border-color: #ff4262;
+            color: #fff;
+            box-shadow: unset;
+            text-shadow: unset;
+          }
+        
+          100% {
+            border-color: #fa032c;
+            color: #fff;
+            text-shadow: 0 0 4px #ff4262;
+            box-shadow: 0 0 16px 0 #ff4262, inset 0 0 8px 0 #ff4262;
+          }
         }
