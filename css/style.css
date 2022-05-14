@@ -10,6 +10,7 @@
         }
         body {
           background-color: #1c1c1c;
+          width:99%;
         }
         a {
           color: #FFF;
@@ -56,7 +57,7 @@
           color: #fff;
           letter-spacing: 4px;
           font-weight: bold;
-          margin-left: 460px;
+          margin-left: 41rem;
           cursor: pointer;
         }
         
